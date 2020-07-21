@@ -9,7 +9,7 @@ const CosmosClientInterface = require("@azure/cosmos").CosmosClient;
 const app = express()
 
 //http://localhost:3002
-//https://headspace-portal.azurewebsites.net
+//https://headspace-dashboard.azurewebsites.net
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "https://headspace-dashboard.azurewebsites.net");
   res.header(
