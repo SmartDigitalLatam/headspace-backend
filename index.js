@@ -8,8 +8,10 @@ const CosmosClientInterface = require("@azure/cosmos").CosmosClient;
 // Initialize the express module and make it accessible via the app variable.
 const app = express()
 
+//http://localhost:3002
+//https://headspace-portal.azurewebsites.net
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "https://headspace-portal.azurewebsites.net");
+  res.header("Access-Control-Allow-Origin", "https://headspace-dashboard.azurewebsites.net");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
